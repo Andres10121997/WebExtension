@@ -11,13 +11,14 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WebExtension")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Andres Felipe Sagredo Bromberg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b9f560be2b69c29aafd737390162ecce1d2a10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc70d167086806bb8b4ff9785f7c891ae584e036")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Andres10121997/WebExtension")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
