@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using System.Reflection;
 
 namespace WebExtension.HTML.InputMode
 {
@@ -19,23 +18,9 @@ namespace WebExtension.HTML.InputMode
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            #region Objects
-            PropertyInfo? property;
-            InputModeAttribute? attr;
-            #endregion
-
-            property = For?.Metadata?.ContainerType?.GetProperty(name: For?.Name);
-
-            if (property == null)
+            if (For?.Metadata?.AdditionalValues.TryGetValue("InputMode", out var inputModeValue) == true)
             {
-                return;
-            }
-
-            attr = property.GetCustomAttribute<InputModeAttribute>();
-
-            if (attr != null)
-            {
-                output.Attributes.SetAttribute("inputmode", attr.InputMode.ToString());
+                output.Attributes.SetAttribute("inputmode", inputModeValue?.ToString());
             }
         }
     }

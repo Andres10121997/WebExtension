@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Andres Felipe Sagredo Bromberg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ffe67add076ea9de53c58b14b80502972d1c463")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0c80a37a4600e0baebe600323c89f727f43e770")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
