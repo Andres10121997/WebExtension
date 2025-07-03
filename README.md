@@ -9,46 +9,48 @@ services.AddControllersWithViews()
 ```
 
 ## ¿Cómo se usa?
-A continuación se muestra una clase (Model) de C# de ejemplo:
+A continuación se muestra un ejemplo de implementación:
+
+### Modelo
 ```csharp
 public class PersonModel
 {
     [
-        DataType(
-            dataType: DataType.Text
-        ),
         InputMode(
             InputMode: InputModeAttribute.InputModeEnum.text
-        ),
-        Required
+        )
     ]
-    public required string Name { get; set; }
+    public string Name { get; set; }
 
     [
-        DataType(
-            dataType: DataType.Text
-        ),
         InputMode(
             InputMode: InputModeAttribute.InputModeEnum.text
-        ),
-        Required
+        )
     ]
-    public required string LastName { get; set; }
+    public string LastName { get; set; }
 
     [
-        DataType(
-            dataType: DataType.Date
-        ),
         InputMode(
             InputMode: InputModeAttribute.InputModeEnum.numeric
-        ),
-        Required
+        )
     ]
     public byte Age { get; set; }
 }
 ```
 
-En el documento cshtml
+### cshtml
 ```cshtml
-<input asp-for="Your-ID" />
+@model PersonModel
+
+<input asp-for="Name" />
+<input asp-for="LastName" />
+<input asp-for="Age" />
+```
+
+### html
+¿Cómo debiese quedar el ``html``?
+```html
+<input inputmode="text" />
+<input inputmode="text" />
+<input inputmode="numeric" />
 ```
