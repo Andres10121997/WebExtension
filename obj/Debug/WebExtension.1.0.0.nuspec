@@ -10,7 +10,7 @@
     <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
     <readme>README.md</readme>
     <description>Package Description</description>
-    <repository type="git" url="https://github.com/Andres10121997/WebExtension" commit="fc70d167086806bb8b4ff9785f7c891ae584e036" />
+    <repository type="git" url="https://github.com/Andres10121997/WebExtension" commit="2ffe67add076ea9de53c58b14b80502972d1c463" />
     <dependencies>
       <group targetFramework="net9.0" />
     </dependencies>

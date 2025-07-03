@@ -19,10 +19,20 @@ namespace WebExtension.HTML.InputMode
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
-            var property = For?.Metadata?.ContainerType?.GetProperty(For?.Name);
-            if (property == null) return;
+            #region Objects
+            PropertyInfo? property;
+            InputModeAttribute? attr;
+            #endregion
 
-            var attr = property.GetCustomAttribute<InputModeAttribute>();
+            property = For?.Metadata?.ContainerType?.GetProperty(name: For?.Name);
+
+            if (property == null)
+            {
+                return;
+            }
+
+            attr = property.GetCustomAttribute<InputModeAttribute>();
+
             if (attr != null)
             {
                 output.Attributes.SetAttribute("inputmode", attr.InputMode.ToString());
