@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32f9e9cd4433628b69bcf4e13be1e4b92463d755")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b9f560be2b69c29aafd737390162ecce1d2a10")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebExtension")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

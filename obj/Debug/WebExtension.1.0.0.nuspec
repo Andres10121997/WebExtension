@@ -6,7 +6,7 @@
     <title>Web Extension</title>
     <authors>WebExtension</authors>
     <description>Package Description</description>
-    <repository type="git" />
+    <repository type="git" commit="03b9f560be2b69c29aafd737390162ecce1d2a10" />
     <dependencies>
       <group targetFramework="net9.0" />
     </dependencies>
@@ -17,6 +17,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Users\andre\OneDrive\Escritorio\WebExtension\bin\Debug\net9.0\WebExtension.dll" target="lib\net9.0\WebExtension.dll" />
+    <file src="C:\Users\andre\OneDrive\Escritorio\Proyecto\WebExtension\bin\Debug\net9.0\WebExtension.dll" target="lib\net9.0\WebExtension.dll" />
   </files>
 </package>

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Reflection;
 
-namespace WebExtension.HTML.InputModel
+namespace WebExtension.HTML.InputMode
 {
     [
         HtmlTargetElement(
@@ -10,7 +10,7 @@ namespace WebExtension.HTML.InputModel
             Attributes = ForAttributeName
         )
     ]
-    public class InputModelTagHelper : TagHelper
+    public class InputModeTagHelper : TagHelper
     {
         private const string ForAttributeName = "asp-for";
 
@@ -22,7 +22,7 @@ namespace WebExtension.HTML.InputModel
             var property = For?.Metadata?.ContainerType?.GetProperty(For?.Name);
             if (property == null) return;
 
-            var attr = property.GetCustomAttribute<InputModelAttribute>();
+            var attr = property.GetCustomAttribute<InputModeAttribute>();
             if (attr != null)
             {
                 output.Attributes.SetAttribute("inputmode", attr.InputMode.ToString());

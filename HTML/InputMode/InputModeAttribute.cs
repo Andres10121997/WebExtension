@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using System;
 
-namespace WebExtension.HTML.InputModel
+namespace WebExtension.HTML.InputMode
 {
     [
         AttributeUsage(
@@ -9,7 +9,7 @@ namespace WebExtension.HTML.InputModel
             AllowMultiple = false
         )
     ]
-    public class InputModelAttribute : Attribute, IDisplayMetadataProvider
+    public class InputModeAttribute : Attribute, IDisplayMetadataProvider
     {
         #region Variables
         private InputModeEnum V_InputMode;
@@ -32,7 +32,7 @@ namespace WebExtension.HTML.InputModel
 
 
         #region Constructor Method
-        public InputModelAttribute(InputModeEnum InputMode)
+        public InputModeAttribute(InputModeEnum InputMode)
         {
             this.V_InputMode = InputMode;
         }
