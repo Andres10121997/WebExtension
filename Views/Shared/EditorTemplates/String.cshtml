@@ -1,0 +1,21 @@
+﻿@model string
+@{
+    var htmlAttributes = new Dictionary<string, object>();
+
+    var metadata = ViewData.ModelMetadata;
+
+    if (metadata.AdditionalValues.TryGetValue("InputMode", out var inputMode))
+    {
+        htmlAttributes["inputmode"] = inputMode.ToString();
+    }
+
+    // Ejemplo adicional: email
+    if (metadata.DataTypeName == "EmailAddress")
+    {
+        htmlAttributes["type"] = "email";
+    }
+
+    var name = metadata.PropertyName ?? "";
+}
+
+@Html.TextBox(name, Model, htmlAttributes)

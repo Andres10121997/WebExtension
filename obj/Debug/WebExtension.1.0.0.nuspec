@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WebExtension</id>
+    <version>1.0.0</version>
+    <title>Web Extension</title>
+    <authors>WebExtension</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net9.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\andre\OneDrive\Escritorio\WebExtension\bin\Debug\net9.0\WebExtension.dll" target="lib\net9.0\WebExtension.dll" />
+  </files>
+</package>
